@@ -89,73 +89,51 @@ function PrevArrow(props) {
 
 const slides = [
   // Title Slide
-  <section className="flex flex-col justify-center items-center p-6 bg-gradient-to-b from-white to-gray-50 min-h-screen relative overflow-hidden">
-    {/* Background Pattern */}
-    <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-    
-    <div className="max-w-6xl mx-auto w-full flex flex-col items-center justify-center px-4 md:px-16 relative z-10">
-      {/* Logo with Animation */}
-      <div className="transform hover:scale-105 transition-transform duration-500 mb-8">
-        <img 
-          src="https://i.imgur.com/J2ME1ji.png" 
-          alt="USKO Logo" 
-          className="w-64 md:w-80 drop-shadow-2xl" 
-          style={{
-            maxWidth: '80vw',
-            filter: 'drop-shadow(0 20px 30px rgba(235, 0, 40, 0.15))'
-          }} 
-        />
-      </div>
-
-      {/* Main Title with Modern Typography */}
-      <div className="text-center mb-8 transform hover:scale-[1.02] transition-transform duration-500">
-        <h1 className="text-5xl md:text-7xl font-extrabold mb-4">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#eb0028] to-[#ff1a3d]">Logistics.</span>
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#eb0028] to-[#ff1a3d]">Delivered.</span>
+  <section className="flex flex-col justify-center items-center min-h-screen bg-white px-4 py-8 md:p-6">
+    <div className="max-w-6xl mx-auto w-full flex flex-col items-center justify-center">
+      {/* Logo */}
+      <img 
+        src="https://i.imgur.com/J2ME1ji.png" 
+        alt="USKO Logo" 
+        className="w-48 md:w-64 mb-6 md:mb-8 drop-shadow-xl" 
+        style={{
+          maxWidth: '70vw',
+          filter: 'drop-shadow(0 10px 15px rgba(235, 0, 40, 0.15))'
+        }}
+      />
+      
+      {/* Main Title */}
+      <div className="text-center mb-6 md:mb-8">
+        <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-2 md:mb-4">
+          <span className="text-[#eb0028]">Logistics.</span>
+          <span className="text-[#eb0028]">Delivered.</span>
           <span className="text-black">Exceptionally.</span>
         </h1>
         
-        <h2 className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto font-medium leading-relaxed">
-          USKO is your trusted partner for white glove, expedited, and specialized logistics across North America. 
-          <span className="block mt-2 font-semibold">We move what matters—on time, every time.</span>
+        <h2 className="text-base md:text-xl text-gray-700 max-w-2xl mx-auto font-medium leading-relaxed px-2">
+          USKO is your trusted partner for white glove, expedited, and specialized logistics across North America.
+          <span className="block mt-2">We move what matters—on time, every time.</span>
         </h2>
       </div>
 
-      {/* CTA Button with Enhanced Styling */}
-      <div className="mb-12">
-        <a 
-          href="#contact" 
-          className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-bold text-white transition-all duration-300 bg-gradient-to-r from-[#eb0028] to-[#ff1a3d] rounded-full shadow-xl hover:shadow-2xl hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#eb0028]"
-        >
-          <span className="relative">Let's Move Forward Together</span>
-          <svg 
-            className="w-5 h-5 ml-2 -mr-1 transition-transform duration-300 transform group-hover:translate-x-1" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24" 
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-          </svg>
-        </a>
-      </div>
+      {/* CTA Button */}
+      <a 
+        href="#contact" 
+        className="bg-[#eb0028] text-white px-6 py-3 rounded-full font-bold text-sm md:text-base shadow-lg hover:bg-[#cc0023] transition-all duration-300 mb-8 md:mb-12 transform hover:scale-105"
+      >
+        Let's Move Forward Together
+      </a>
 
-      {/* Client Badge with Enhanced Styling */}
-      <div className="transform hover:scale-105 transition-all duration-500">
-        <div className="bg-gradient-to-r from-[#eb0028]/5 to-[#ff1a3d]/5 backdrop-blur-sm p-6 rounded-2xl border border-[#eb0028]/20 shadow-lg">
-          <div className="flex items-center justify-center space-x-3">
-            <svg className="w-6 h-6 text-[#eb0028]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-            </svg>
-            <span className="text-[#eb0028] font-bold text-xl">Prepared for Expeditors International</span>
-          </div>
+      {/* Client Badge */}
+      <div className="bg-[#eb0028]/5 p-3 md:p-4 rounded-xl border border-[#eb0028]/20 w-full max-w-sm">
+        <div className="flex items-center justify-center space-x-2">
+          <svg className="w-4 h-4 md:w-5 md:h-5 text-[#eb0028]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+          <span className="text-[#eb0028] font-bold text-sm md:text-lg">Prepared for Expeditors International</span>
         </div>
       </div>
     </div>
-
-    {/* Add subtle animated elements */}
-    <div className="absolute top-20 left-10 w-64 h-64 bg-[#eb0028]/5 rounded-full filter blur-3xl animate-pulse"></div>
-    <div className="absolute bottom-20 right-10 w-64 h-64 bg-[#eb0028]/5 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
   </section>,
 
   // About USKO
@@ -748,53 +726,53 @@ const slides = [
       
       <div className="bg-[#eb0028]/5 p-6 rounded-xl border border-[#eb0028]/20 shadow-lg mx-auto max-w-3xl mb-8">
         <div className="flex items-center mb-4">
-          <div className="w-12 h-12 rounded-full bg-[#eb0028] flex items-center justify-center text-white mr-4">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#eb0028] flex items-center justify-center text-white mr-3 md:mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
           </div>
-          <h3 className="text-xl font-semibold text-[#eb0028]">USKO Family of Companies</h3>
+          <h3 className="text-lg md:text-xl font-semibold text-[#eb0028]">USKO Family of Companies</h3>
         </div>
         <div className="space-y-4">
           {/* Tree/Org Chart Layout */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
             {/* USKO Logistics Inc - Top Center */}
-            <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm col-span-2 mx-auto" style={{ width: '338.89px', height: '126.23px' }}>
-              <p className="font-bold text-gray-800 text-center">USKO LOGISTICS INC</p>
-              <div className="flex justify-between mt-1">
+            <div className="bg-white p-3 md:p-4 rounded-lg border border-gray-100 shadow-sm col-span-1 md:col-span-2 mx-auto w-full md:w-[338.89px]">
+              <p className="font-bold text-gray-800 text-center text-sm md:text-base">USKO LOGISTICS INC</p>
+              <div className="flex justify-between mt-1 text-xs md:text-sm">
                 <span className="text-gray-600">MC Number:</span>
                 <span className="font-semibold text-gray-800">803644</span>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between text-xs md:text-sm">
                 <span className="text-gray-600">US DOT Number:</span>
                 <span className="font-semibold text-gray-800">2337754</span>
               </div>
             </div>
             
             {/* Vertical Line Connector */}
-            <div className="col-span-2 h-8 flex justify-center">
+            <div className="col-span-1 md:col-span-2 h-4 md:h-8 flex justify-center">
               <div className="w-px h-full bg-[#eb0028]/20"></div>
             </div>
             
             {/* USKO Expedite and Express - Side by Side */}
-            <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm">
-              <p className="font-bold text-gray-800 text-center">USKO EXPEDITE INC</p>
-              <div className="flex justify-between mt-1">
+            <div className="bg-white p-3 md:p-4 rounded-lg border border-gray-100 shadow-sm">
+              <p className="font-bold text-gray-800 text-center text-sm md:text-base">USKO EXPEDITE INC</p>
+              <div className="flex justify-between mt-1 text-xs md:text-sm">
                 <span className="text-gray-600">MC Number:</span>
                 <span className="font-semibold text-gray-800">746242</span>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between text-xs md:text-sm">
                 <span className="text-gray-600">US DOT Number:</span>
-                <span className="font-semibold text-gray-800">3075935</span>
+                <span className="font-semibold text-gray-800">307593</span>
               </div>
             </div>
-            <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm">
-              <p className="font-bold text-gray-800 text-center">USKO EXPRESS INC</p>
-              <div className="flex justify-between mt-1">
+            <div className="bg-white p-3 md:p-4 rounded-lg border border-gray-100 shadow-sm">
+              <p className="font-bold text-gray-800 text-center text-sm md:text-base">USKO EXPRESS INC</p>
+              <div className="flex justify-between mt-1 text-xs md:text-sm">
                 <span className="text-gray-600">MC Number:</span>
                 <span className="font-semibold text-gray-800">563453</span>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between text-xs md:text-sm">
                 <span className="text-gray-600">US DOT Number:</span>
                 <span className="font-semibold text-gray-800">1499885</span>
               </div>

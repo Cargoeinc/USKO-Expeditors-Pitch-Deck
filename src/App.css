@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-/* Add any additional global styles here */
+/* Base styles */
 body {
   margin: 0;
   padding: 0;
@@ -13,18 +13,26 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  min-height: 100vh;
+  min-height: -webkit-fill-available; /* Fix for mobile Safari */
+}
+
+/* Fix for mobile viewport height */
+html {
+  height: -webkit-fill-available;
 }
 
 /* Mobile-first responsive styles */
 @media screen and (max-width: 768px) {
   /* Adjust font sizes for mobile */
   h1 {
-    font-size: 1.75rem !important;
-    line-height: 1.3 !important;
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
   }
   
   h2 {
-    font-size: 1.25rem !important;
+    font-size: 1rem !important;
     line-height: 1.4 !important;
   }
   
@@ -59,6 +67,18 @@ body {
     max-width: 100%;
     height: auto;
   }
+
+  /* Adjust vertical spacing */
+  section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Ensure content fits viewport */
+  .min-h-screen {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
 }
 
 /* Prevent horizontal scroll */
@@ -89,5 +109,14 @@ textarea {
   a:active {
     opacity: 0.8;
     transform: scale(0.98);
+  }
+}
+
+/* Fix for iOS safe areas */
+@supports (padding: max(0px)) {
+  .min-h-screen {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
   }
 } 
