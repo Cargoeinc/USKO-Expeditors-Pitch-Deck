@@ -89,22 +89,22 @@ function PrevArrow(props) {
 
 const slides = [
   // Title Slide
-  <section className="flex flex-col justify-center items-center min-h-screen bg-white px-4 py-8 md:p-6">
+  <section className="flex flex-col justify-center items-center min-h-screen bg-white px-3 py-4 md:px-4 md:py-8">
     <div className="max-w-6xl mx-auto w-full flex flex-col items-center justify-center">
       {/* Logo */}
       <img 
         src="https://i.imgur.com/J2ME1ji.png" 
         alt="USKO Logo" 
-        className="w-40 md:w-64 mb-4 md:mb-8 drop-shadow-xl" 
+        className="w-32 md:w-64 mb-4 md:mb-8 drop-shadow-xl" 
         style={{
-          maxWidth: '60vw',
+          maxWidth: '50vw',
           filter: 'drop-shadow(0 10px 15px rgba(235, 0, 40, 0.15))'
         }}
       />
       
       {/* Main Title */}
       <div className="text-center mb-4 md:mb-8">
-        <h1 className="text-2xl md:text-5xl font-extrabold tracking-tight mb-2 md:mb-4 leading-tight">
+        <h1 className="text-xl md:text-5xl font-extrabold tracking-tight mb-2 md:mb-4 leading-tight">
           <div className="flex flex-col md:flex-row md:gap-2 justify-center items-center">
             <span className="text-[#eb0028] whitespace-nowrap">Logistics.</span>
             <span className="text-[#eb0028] whitespace-nowrap">Delivered.</span>
@@ -112,7 +112,7 @@ const slides = [
           </div>
         </h1>
         
-        <h2 className="text-sm md:text-xl text-gray-700 max-w-2xl mx-auto font-medium leading-relaxed px-2">
+        <h2 className="text-xs md:text-xl text-gray-700 max-w-2xl mx-auto font-medium leading-relaxed px-2">
           <span className="block mb-2">USKO is your trusted partner for white glove, expedited, and specialized logistics across North America.</span>
           <span className="block">We move what matters—on time, every time.</span>
         </h2>
@@ -139,45 +139,45 @@ const slides = [
   </section>,
 
   // About USKO
-  <section className="flex flex-col justify-center items-center p-6 bg-white">
+  <section className="flex flex-col justify-center items-center px-3 py-4 md:p-6 bg-white min-h-screen">
     <div className="max-w-6xl mx-auto w-full">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-[#eb0028] mb-3 text-center tracking-tight">About <span className="text-black">USKO</span></h1>
-      <h2 className="text-xl md:text-2xl text-gray-700 mb-5 text-center max-w-2xl mx-auto font-semibold">Excellence in Transportation and Logistics</h2>
+      <h1 className="text-3xl md:text-5xl font-extrabold text-[#eb0028] mb-2 md:mb-3 text-center tracking-tight">About <span className="text-black">USKO</span></h1>
+      <h2 className="text-lg md:text-2xl text-gray-700 mb-4 md:mb-5 text-center max-w-2xl mx-auto font-semibold">Excellence in Transportation and Logistics</h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-4">
         <div className="flex justify-center items-center order-2 md:order-1">
-          <img src="https://i.imgur.com/H7F2rk9.png" alt="USKO Logistics Truck" className="max-w-full h-auto md:h-80 rounded-lg shadow-lg" style={{maxHeight: '340px'}} />
+          <img src="https://i.imgur.com/H7F2rk9.png" alt="USKO Logistics Truck" className="max-w-full h-auto md:h-80 rounded-lg shadow-lg object-cover" style={{maxHeight: '280px'}} />
         </div>
-        <div className="space-y-4 order-1 md:order-2">
-          <div className="bg-gray-50 rounded-xl p-4 shadow-lg">
-            <h3 className="text-xl font-semibold text-[#eb0028] mb-3">Company Highlights</h3>
-            <div className="grid grid-cols-3 gap-3">
+        <div className="space-y-3 md:space-y-4 order-1 md:order-2">
+          <div className="bg-gray-50 rounded-xl p-3 md:p-4 shadow-lg">
+            <h3 className="text-lg md:text-xl font-semibold text-[#eb0028] mb-3">Company Highlights</h3>
+            <div className="grid grid-cols-3 gap-2 md:gap-3">
               <div className="text-center">
-                <div className="w-12 h-12 rounded-full bg-[#eb0028] flex items-center justify-center text-white font-bold text-base mx-auto shadow-md">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#eb0028] flex items-center justify-center text-white font-bold text-sm md:text-base mx-auto shadow-md">
                   18
                 </div>
-                <div className="text-gray-700 text-sm mt-1">Years Active</div>
+                <div className="text-gray-700 text-xs md:text-sm mt-1">Years Active</div>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 rounded-full bg-[#eb0028] flex items-center justify-center text-white font-bold text-base mx-auto shadow-md">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#eb0028] flex items-center justify-center text-white font-bold text-sm md:text-base mx-auto shadow-md">
                   65M+
                 </div>
-                <div className="text-gray-700 text-sm mt-1">Miles</div>
+                <div className="text-gray-700 text-xs md:text-sm mt-1">Miles</div>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 rounded-full bg-[#eb0028] flex items-center justify-center text-white font-bold text-base mx-auto shadow-md">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#eb0028] flex items-center justify-center text-white font-bold text-sm md:text-base mx-auto shadow-md">
                   500+
                 </div>
-                <div className="text-gray-700 text-sm mt-1">Team</div>
+                <div className="text-gray-700 text-xs md:text-sm mt-1">Team</div>
               </div>
             </div>
           </div>
-          <div className="bg-gray-50 rounded-xl p-4 shadow-lg">
-            <p className="text-gray-700 text-sm leading-relaxed">
+          <div className="bg-gray-50 rounded-xl p-3 md:p-4 shadow-lg">
+            <p className="text-xs md:text-sm text-gray-700 leading-relaxed">
               From full truckload shipments to specialized logistics, USKO stands as a trusted partner in comprehensive logistics and cargo management across North America and Europe.
             </p>
-            <p className="text-gray-700 text-sm leading-relaxed mt-2">
-              Our premium white-glove service ensures your high-value equipment and sensitive technology arrives safely, on time, every time, with TSA certified drivers ensuring maximum security.
+            <p className="text-xs md:text-sm text-gray-700 leading-relaxed mt-2">
+              Our premium white-glove service ensures your high-value equipment and sensitive technology arrives safely, on time, every time, with our professional drivers following strict security protocols.
             </p>
           </div>
         </div>
@@ -186,14 +186,14 @@ const slides = [
   </section>,
 
   // Transportation Assets
-  <section className="flex flex-col justify-center items-center p-8 bg-white">
+  <section className="flex flex-col justify-center items-center px-3 py-4 md:p-8 bg-white min-h-screen">
     <div className="max-w-6xl mx-auto w-full">
-      <div className="bg-[#eb0028]/10 p-4 rounded-lg border border-[#eb0028]/30 mb-6 text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-[#eb0028] mb-2 text-center tracking-tight">Our <span className="text-black">Transportation Assets</span></h1>
-        <h2 className="text-xl md:text-2xl text-gray-700 text-center max-w-3xl mx-auto font-semibold">Comprehensive Fleet Solutions for Every Need</h2>
+      <div className="bg-[#eb0028]/10 p-3 md:p-4 rounded-lg border border-[#eb0028]/30 mb-4 md:mb-6 text-center">
+        <h1 className="text-3xl md:text-5xl font-extrabold text-[#eb0028] mb-2 text-center tracking-tight">Our <span className="text-black">Transportation Assets</span></h1>
+        <h2 className="text-lg md:text-2xl text-gray-700 text-center max-w-3xl mx-auto font-semibold">Comprehensive Fleet Solutions for Every Need</h2>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-4 md:mt-6">
         <div className="bg-gray-50 rounded-xl p-6 shadow-lg">
           <div className="flex items-center mb-4">
             <div className="w-12 h-12 rounded-full bg-[#eb0028] flex items-center justify-center text-white mr-4">
@@ -208,13 +208,7 @@ const slides = [
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#eb0028] mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <span>150+ company-owned tractors for reliable capacity</span>
-            </li>
-            <li className="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#eb0028] mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span>Dedicated team drivers for high-value shipments</span>
+              <span>Professional drivers trained in secure transportation protocols</span>
             </li>
             <li className="flex items-start">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#eb0028] mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -251,12 +245,24 @@ const slides = [
             <h3 className="text-xl font-semibold text-[#eb0028]">Expedite White Glove Services</h3>
           </div>
           
-          <div className="mb-4">
-            <img src="https://imgur.com/WyZyHpc.jpg" alt="USKO Lift Gate Services" className="w-full h-52 object-cover rounded-lg shadow-md" />
-            <p className="text-sm text-gray-500 text-center italic mt-2">USKO specialized lift gate service for precision delivery</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div>
+              <img src="https://imgur.com/WyZyHpc.jpg" alt="USKO Lift Gate Services" className="w-full h-40 object-cover rounded-lg shadow-md" />
+              <p className="text-sm text-gray-500 text-center italic mt-2">USKO specialized lift gate service</p>
+            </div>
+            <div>
+              <img src="https://imgur.com/TptDEQk.jpg" alt="USKO Sprinter Van Fleet" className="w-full h-40 object-cover rounded-lg shadow-md" />
+              <p className="text-sm text-gray-500 text-center italic mt-2">Part of our 700+ sprinter van fleet</p>
+            </div>
           </div>
           
           <ul className="space-y-3 text-gray-700">
+            <li className="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#eb0028] mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>700+ sprinter vans for expedited and time-critical deliveries</span>
+            </li>
             <li className="flex items-start">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#eb0028] mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -267,13 +273,7 @@ const slides = [
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#eb0028] mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <span>High-performance sprinter vans for time-critical deliveries</span>
-            </li>
-            <li className="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#eb0028] mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span>TSA certified drivers for secure transportation</span>
+              <span>Professional drivers trained in secure transportation protocols</span>
             </li>
             <li className="flex items-start">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#eb0028] mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -296,7 +296,7 @@ const slides = [
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             <div className="border-l-4 border-[#eb0028] pl-3">
               <h4 className="font-semibold text-gray-800 mb-1 text-sm">Security First</h4>
-              <p className="text-gray-700 text-xs">Our TSA certified drivers and secure chain of custody ensure your valuable IT assets are protected at every step.</p>
+              <p className="text-gray-700 text-xs">Our professional drivers and comprehensive security protocols ensure your valuable IT assets are protected throughout transit.</p>
             </div>
             <div className="border-l-4 border-[#eb0028] pl-3">
               <h4 className="font-semibold text-gray-800 mb-1 text-sm">Tech Expertise</h4>
@@ -310,129 +310,125 @@ const slides = [
         </div>
 
         {/* White Glove Service Video Showcase */}
-        <div className="bg-gray-50 rounded-xl p-6 shadow-lg md:col-span-2">
+        <div className="bg-gray-50 rounded-xl p-6 shadow-lg relative mt-6 md:col-span-2">
           <div className="flex items-center mb-4">
             <div className="w-12 h-12 rounded-full bg-[#eb0028] flex items-center justify-center text-white mr-4">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
               </svg>
             </div>
-            <div>
-              <h3 className="text-xl font-semibold text-[#eb0028]">White Glove Service in Action</h3>
-              <p className="text-gray-700 text-sm mt-1">Watch our specialized team perform a precision white glove delivery</p>
-            </div>
+            <h3 className="text-xl font-semibold text-[#eb0028]">White Glove Service In Action</h3>
           </div>
-          
-          <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
-            <div className="w-full h-[400px] bg-gray-100 flex items-center justify-center text-gray-700 font-semibold text-xl">
-              Alice's white glove video goes here
+          <div className="max-w-3xl mx-auto">
+            <div className="aspect-w-16 aspect-h-7 rounded-lg overflow-hidden shadow-lg">
+              <video 
+                className="w-full h-full object-cover"
+                controls
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              >
+                <source src="https://imgur.com/mWAYZ8u.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
-          </div>
-          
-          <div className="mt-4 bg-[#eb0028]/5 p-4 rounded-lg border border-[#eb0028]/20">
-            <p className="text-gray-700 text-sm">
-              Our white glove service goes beyond standard delivery. Watch as our specialized team demonstrates proper handling, 
-              precision care, and professional setup of sensitive equipment. This level of care and expertise is what sets USKO apart in handling 
-              high-value shipments.
-            </p>
+            <p className="text-sm text-gray-500 text-center italic mt-2">USKO's white glove service demonstration</p>
           </div>
         </div>
       </div>
     </div>
   </section>,
 
-  // Network Coverage - Updated to just list branches
-  <section className="flex flex-col justify-center items-center p-8 bg-white">
+  // Network Coverage
+  <section className="flex flex-col justify-center items-center px-8 md:px-24 py-4 md:py-8 bg-white min-h-screen">
     <div className="max-w-6xl mx-auto w-full">
-      <div className="bg-[#eb0028]/10 p-4 rounded-lg border border-[#eb0028]/30 mb-6 text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-[#eb0028] mb-2 text-center tracking-tight">Our <span className="text-black">Branch Network</span></h1>
-        <h2 className="text-xl md:text-2xl text-gray-700 text-center max-w-3xl mx-auto font-semibold">Strategic Locations Across North America and Europe</h2>
+      <div className="bg-[#eb0028]/10 p-3 md:p-4 rounded-lg border border-[#eb0028]/30 mb-4 md:mb-6 text-center">
+        <h1 className="text-3xl md:text-5xl font-extrabold text-[#eb0028] mb-2 text-center tracking-tight">Our <span className="text-black">Branch Network</span></h1>
+        <h2 className="text-lg md:text-2xl text-gray-700 text-center max-w-3xl mx-auto font-semibold">Strategic Locations Across North America and Europe</h2>
       </div>
       
-      <div className="mt-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-gray-50 p-6 rounded-xl shadow-lg flex flex-col items-center">
-            <div className="w-14 h-14 rounded-full bg-[#eb0028] flex items-center justify-center text-white mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div className="mt-4 md:mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
+          <div className="bg-gray-50 p-3 md:p-4 rounded-xl shadow-lg flex flex-col items-center">
+            <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#eb0028] flex items-center justify-center text-white mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-7 md:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-4">United States</h3>
-            <ul className="space-y-3 w-full">
-              <li className="flex justify-between bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
-                <span className="text-gray-700 font-medium">West Sacramento, CA</span>
-                <span className="font-medium">Branch</span>
+            <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2">United States</h3>
+            <ul className="space-y-2 w-full">
+              <li className="flex justify-between bg-white p-2 rounded-lg border border-gray-200 shadow-sm">
+                <span className="text-gray-700 font-medium text-sm">West Sacramento, CA</span>
+                <span className="font-medium text-sm">Branch</span>
               </li>
-              <li className="flex justify-between bg-white p-3 rounded-lg border border-[#eb0028] shadow-sm text-[#eb0028] font-semibold">
-                <span>Roseville, CA (HQ)</span>
-                <span>Branch</span>
+              <li className="flex justify-between bg-white p-2 rounded-lg border border-gray-200 shadow-sm">
+                <span className="text-gray-700 font-medium text-sm">Roseville, CA (HQ)</span>
+                <span className="font-medium text-sm">Branch</span>
               </li>
-              <li className="flex justify-between bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
-                <span className="text-gray-700 font-medium">Chicago, IL</span>
-                <span className="font-medium">Branch</span>
+              <li className="flex justify-between bg-white p-2 rounded-lg border border-gray-200 shadow-sm">
+                <span className="text-gray-700 font-medium text-sm">Chicago, IL</span>
+                <span className="font-medium text-sm">Branch</span>
               </li>
-              <li className="flex justify-between bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
-                <span className="text-gray-700 font-medium">St Marys, GA</span>
-                <span className="font-medium">Branch</span>
+              <li className="flex justify-between bg-white p-2 rounded-lg border border-gray-200 shadow-sm">
+                <span className="text-gray-700 font-medium text-sm">St Marys, GA</span>
+                <span className="font-medium text-sm">Branch</span>
               </li>
-              <li className="flex justify-between bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
-                <span className="text-gray-700 font-medium">Houston, TX</span>
-                <span className="font-medium">Branch</span>
+              <li className="flex justify-between bg-white p-2 rounded-lg border border-gray-200 shadow-sm">
+                <span className="text-gray-700 font-medium text-sm">Houston, TX</span>
+                <span className="font-medium text-sm">Branch</span>
               </li>
-              <li className="flex justify-between bg-white p-3 rounded-lg border border-[#eb0028] shadow-sm text-[#eb0028] font-semibold">
-                <span>Sacramento, CA</span>
-                <span>Warehouse</span>
+              <li className="flex justify-between bg-white p-2 rounded-lg border border-gray-200 shadow-sm">
+                <span className="text-gray-700 font-medium text-sm">Sacramento, CA</span>
+                <span className="font-medium text-sm">Warehouse</span>
               </li>
             </ul>
           </div>
           
-          <div className="bg-gray-50 p-6 rounded-xl shadow-lg flex flex-col items-center">
-            <div className="w-14 h-14 rounded-full bg-[#eb0028] flex items-center justify-center text-white mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="bg-gray-50 p-3 md:p-4 rounded-xl shadow-lg flex flex-col items-center">
+            <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#eb0028] flex items-center justify-center text-white mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-7 md:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-4">Europe</h3>
-            <ul className="space-y-3 w-full">
-              <li className="flex justify-between bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
-                <span className="text-gray-700 font-medium">Warsaw, Poland</span>
-                <span className="font-medium">Branch</span>
+            <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2">Europe</h3>
+            <ul className="space-y-2 w-full">
+              <li className="flex justify-between bg-white p-2 rounded-lg border border-gray-200 shadow-sm">
+                <span className="text-gray-700 font-medium text-sm">Warsaw, Poland</span>
+                <span className="font-medium text-sm">Branch</span>
               </li>
-              <li className="flex justify-between bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
-                <span className="text-gray-700 font-medium">Kyiv, Ukraine</span>
-                <span className="font-medium">Branch</span>
+              <li className="flex justify-between bg-white p-2 rounded-lg border border-gray-200 shadow-sm">
+                <span className="text-gray-700 font-medium text-sm">Kyiv, Ukraine</span>
+                <span className="font-medium text-sm">Branch</span>
               </li>
-              <li className="flex justify-between bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
-                <span className="text-gray-700 font-medium">Odesa, Ukraine</span>
-                <span className="font-medium">Branch</span>
+              <li className="flex justify-between bg-white p-2 rounded-lg border border-gray-200 shadow-sm">
+                <span className="text-gray-700 font-medium text-sm">Odesa, Ukraine</span>
+                <span className="font-medium text-sm">Branch</span>
               </li>
             </ul>
           </div>
           
-          <div className="bg-gray-50 p-6 rounded-xl shadow-lg flex flex-col items-center">
-            <div className="w-14 h-14 rounded-full bg-[#eb0028] flex items-center justify-center text-white mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="bg-gray-50 p-3 md:p-4 rounded-xl shadow-lg flex flex-col items-center">
+            <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#eb0028] flex items-center justify-center text-white mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-7 md:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-4">Latin America</h3>
-            <ul className="space-y-3 w-full">
-              <li className="flex justify-between bg-white p-3 rounded-lg border border-[#eb0028] shadow-sm text-[#eb0028] font-semibold">
-                <span>Monterrey, Mexico</span>
-                <span>Branch</span>
+            <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2">Latin America</h3>
+            <ul className="space-y-2 w-full">
+              <li className="flex justify-between bg-white p-2 rounded-lg border border-gray-200 shadow-sm">
+                <span className="text-gray-700 font-medium text-sm">Monterrey, Mexico</span>
+                <span className="font-medium text-sm">Branch</span>
               </li>
-              <li className="flex items-center bg-white p-3 rounded-lg border border-gray-200 shadow-sm mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#eb0028] mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span className="text-gray-700">Daily cross-border operations with the US</span>
+              <li className="flex items-center bg-white p-2 rounded-lg border border-gray-200 shadow-sm">
+                <span className="text-gray-700 text-sm">Daily cross-border operations with the US</span>
               </li>
             </ul>
           </div>
         </div>
         
-        <div className="mt-6 bg-[#eb0028]/5 p-5 rounded-xl border border-[#eb0028]/20 shadow-lg text-center">
-          <p className="text-gray-700">
+        <div className="mt-4 bg-[#eb0028]/5 p-4 rounded-xl border border-[#eb0028]/20 shadow-lg text-center">
+          <p className="text-gray-700 text-sm">
             All USKO branches are strategically positioned to provide optimal coverage for Expeditors International shipments.
           </p>
         </div>
@@ -590,7 +586,7 @@ const slides = [
               </div>
               <div>
                 <h4 className="font-semibold text-gray-800 mb-0.5 text-sm">Secure Transportation</h4>
-                <p className="text-gray-700 text-xs">TSA certified drivers and specialized handling procedures for high-value and sensitive shipments.</p>
+                <p className="text-gray-700 text-xs">Our professional drivers and comprehensive security protocols ensure your valuable IT assets are protected throughout transit.</p>
               </div>
             </li>
             <li className="flex">
@@ -637,8 +633,8 @@ const slides = [
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <h4 className="font-semibold text-gray-800 mb-1">Risk Mitigation</h4>
-                <p className="text-gray-700 text-sm">Specialized handling reduces damage claims to less than 0.5% for sensitive deliveries</p>
+                <h4 className="font-semibold text-gray-800 mb-1">Security Protocols</h4>
+                <p className="text-gray-700 text-sm">Comprehensive security measures and trained teams ensuring safe transport</p>
               </div>
               <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm">
                 <div className="w-12 h-12 rounded-full bg-[#eb0028]/10 flex items-center justify-center mb-3">
@@ -670,7 +666,7 @@ const slides = [
               </div>
               <h3 className="text-xl font-semibold text-[#eb0028]">Did You Know?</h3>
             </div>
-            <p className="text-gray-700">USKO's new Monterrey branch specializes in cross-border logistics between the US and Mexico, with dedicated TSA certified drivers and specialists to ensure seamless transportation for multinational operations.</p>
+            <p className="text-gray-700">USKO's new Monterrey branch specializes in cross-border logistics between the US and Mexico, with dedicated professional drivers and specialists to ensure seamless transportation for multinational operations.</p>
           </div>
         </div>
       </div>
@@ -678,55 +674,17 @@ const slides = [
   </section>,
 
   // Closing Slide
-  <section className="flex flex-col justify-center items-center p-8 pb-16 bg-white">
+  <section className="flex flex-col justify-center items-center px-3 py-4 md:p-8 pb-16 bg-white min-h-screen">
     <div className="max-w-6xl mx-auto w-full">
-      <div className="text-center mb-8">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-[#eb0028] mb-4">Ready to Transform Your <span className="text-black">Logistics Experience?</span></h1>
-        <h2 className="text-xl md:text-2xl text-gray-700 mb-6 max-w-3xl mx-auto font-semibold">
+      <div className="text-center mb-6 md:mb-8">
+        <h1 className="text-3xl md:text-5xl font-extrabold text-[#eb0028] mb-3 md:mb-4">Ready to Transform Your <span className="text-black">Logistics Experience?</span></h1>
+        <h2 className="text-lg md:text-2xl text-gray-700 mb-4 md:mb-6 max-w-3xl mx-auto font-semibold">
           Partner with USKO to elevate Expeditors International's transportation capabilities with our specialized fleet and white glove delivery teams.
         </h2>
       </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-        <div className="bg-gray-50 rounded-xl p-6 shadow-lg text-center">
-          <div className="mx-auto w-16 h-16 rounded-full bg-[#eb0028] flex items-center justify-center text-white mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-            </svg>
-          </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2">Contact Us</h3>
-          <p className="text-gray-700 mb-3">Speak with our sales team member</p>
-          <p className="font-bold text-[#eb0028] text-lg">+1 (916) 849-2156</p>
-        </div>
-        
-        <div className="bg-gray-50 rounded-xl p-6 shadow-lg text-center">
-          <div className="mx-auto w-16 h-16 rounded-full bg-[#eb0028] flex items-center justify-center text-white mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-          </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2">Email</h3>
-          <p className="text-gray-700 mb-3">For RFQ and RFI opportunities email:</p>
-          <p className="font-bold text-[#eb0028] text-lg">ron@uskoinc.com</p>
-        </div>
-        
-        <div className="bg-gray-50 rounded-xl p-6 shadow-lg text-center">
-          <div className="mx-auto w-16 h-16 rounded-full bg-[#eb0028] flex items-center justify-center text-white mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-          </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2">California Office</h3>
-          <p className="text-gray-700 mb-3">Our main West Coast facility</p>
-          <div className="flex flex-col items-center">
-            <p className="font-bold text-[#eb0028] text-base">1101 CREEKSIDE RIDGE DR STE&nbsp;270</p>
-            <p className="font-bold text-[#eb0028] text-base">ROSEVILLE, CA 95678</p>
-          </div>
-        </div>
-      </div>
-      
-      <div className="bg-[#eb0028]/5 p-6 rounded-xl border border-[#eb0028]/20 shadow-lg mx-auto max-w-3xl mb-8">
+
+      {/* USKO Family of Companies Section */}
+      <div className="bg-[#eb0028]/5 p-4 md:p-6 rounded-xl border border-[#eb0028]/20 shadow-lg mx-auto max-w-3xl mb-6 md:mb-8">
         <div className="flex items-center mb-4">
           <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#eb0028] flex items-center justify-center text-white mr-3 md:mr-4">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -743,7 +701,7 @@ const slides = [
               <p className="font-bold text-gray-800 text-center text-sm md:text-base">USKO LOGISTICS INC</p>
               <div className="flex justify-between mt-1 text-xs md:text-sm">
                 <span className="text-gray-600">MC Number:</span>
-                <span className="font-semibold text-gray-800">803644</span>
+                <span className="font-semibold text-gray-800">728260</span>
               </div>
               <div className="flex justify-between text-xs md:text-sm">
                 <span className="text-gray-600">US DOT Number:</span>
@@ -783,9 +741,48 @@ const slides = [
         </div>
       </div>
       
-      <div className="text-center mt-6 mb-12">
-        <img src="https://i.imgur.com/J2ME1ji.png" alt="USKO Logo" className="w-64 mx-auto mb-4" />
-        <h4 className="text-2xl font-bold text-[#eb0028]">Logistics. Delivered. <span className="text-black">Exceptionally.</span></h4>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8">
+        <div className="bg-gray-50 rounded-xl p-4 md:p-6 shadow-lg text-center">
+          <div className="mx-auto w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#eb0028] flex items-center justify-center text-white mb-3 md:mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2">Contact Us</h3>
+          <p className="text-sm md:text-base text-gray-700 mb-3">Speak with our sales team member</p>
+          <p className="font-bold text-[#eb0028] text-base md:text-lg">+1 (916) 849-2156</p>
+        </div>
+        
+        <div className="bg-gray-50 rounded-xl p-4 md:p-6 shadow-lg text-center">
+          <div className="mx-auto w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#eb0028] flex items-center justify-center text-white mb-3 md:mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2">Email</h3>
+          <p className="text-sm md:text-base text-gray-700 mb-3">For RFQ and RFI opportunities email:</p>
+          <p className="font-bold text-[#eb0028] text-base md:text-lg">ron@uskoinc.com</p>
+        </div>
+        
+        <div className="bg-gray-50 rounded-xl p-4 md:p-6 shadow-lg text-center">
+          <div className="mx-auto w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#eb0028] flex items-center justify-center text-white mb-3 md:mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2">California Office</h3>
+          <p className="text-sm md:text-base text-gray-700 mb-3">Our main West Coast facility</p>
+          <div className="flex flex-col items-center">
+            <p className="font-bold text-[#eb0028] text-base">1101 CREEKSIDE RIDGE DR STE&nbsp;270</p>
+            <p className="font-bold text-[#eb0028] text-base">ROSEVILLE, CA 95678</p>
+          </div>
+        </div>
+      </div>
+      
+      <div className="text-center mt-4 md:mt-6 mb-8 md:mb-12">
+        <img src="https://i.imgur.com/J2ME1ji.png" alt="USKO Logo" className="w-48 md:w-64 mx-auto mb-4" />
+        <h4 className="text-xl md:text-2xl font-bold text-[#eb0028]">Logistics. Delivered. <span className="text-black">Exceptionally.</span></h4>
       </div>
     </div>
   </section>,
@@ -810,11 +807,14 @@ const settings = {
       breakpoint: 768,
       settings: {
         arrows: false,
-        dots: true
+        dots: true,
+        adaptiveHeight: true,
+        swipe: true,
+        touchMove: true,
+        speed: 600
       }
     }
   ],
-  // Ensures the slide fits the window properly
   lazyLoad: true,
   fade: false,
   swipe: true,
@@ -822,12 +822,12 @@ const settings = {
 };
 
 const USKOPitchDeck = () => (
-  <div className="bg-white w-full">
+  <div className="bg-white w-full min-h-screen">
     <Slider {...settings}>
       {slides.map((slide, idx) => (
-        <div key={idx} className="relative">
+        <div key={idx} className="relative min-h-screen">
           {slide}
-          <div className="page-indicator">
+          <div className="page-indicator absolute bottom-2 right-2 bg-white/80 px-2 py-1 rounded-full text-sm">
             <span className="text-[#eb0028] font-bold">{idx + 1}</span>
             <span className="mx-1 text-gray-400">/</span>
             <span className="text-gray-500">{slides.length}</span>
