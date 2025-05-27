@@ -95,42 +95,44 @@ const slides = [
       <img 
         src="https://i.imgur.com/J2ME1ji.png" 
         alt="USKO Logo" 
-        className="w-48 md:w-64 mb-6 md:mb-8 drop-shadow-xl" 
+        className="w-40 md:w-64 mb-4 md:mb-8 drop-shadow-xl" 
         style={{
-          maxWidth: '70vw',
+          maxWidth: '60vw',
           filter: 'drop-shadow(0 10px 15px rgba(235, 0, 40, 0.15))'
         }}
       />
       
       {/* Main Title */}
-      <div className="text-center mb-6 md:mb-8">
-        <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-2 md:mb-4">
-          <span className="text-[#eb0028]">Logistics.</span>
-          <span className="text-[#eb0028]">Delivered.</span>
-          <span className="text-black">Exceptionally.</span>
+      <div className="text-center mb-4 md:mb-8">
+        <h1 className="text-2xl md:text-5xl font-extrabold tracking-tight mb-2 md:mb-4 leading-tight">
+          <div className="flex flex-col md:flex-row md:gap-2 justify-center items-center">
+            <span className="text-[#eb0028] whitespace-nowrap">Logistics.</span>
+            <span className="text-[#eb0028] whitespace-nowrap">Delivered.</span>
+            <span className="text-black whitespace-nowrap">Exceptionally.</span>
+          </div>
         </h1>
         
-        <h2 className="text-base md:text-xl text-gray-700 max-w-2xl mx-auto font-medium leading-relaxed px-2">
-          USKO is your trusted partner for white glove, expedited, and specialized logistics across North America.
-          <span className="block mt-2">We move what matters—on time, every time.</span>
+        <h2 className="text-sm md:text-xl text-gray-700 max-w-2xl mx-auto font-medium leading-relaxed px-2">
+          <span className="block mb-2">USKO is your trusted partner for white glove, expedited, and specialized logistics across North America.</span>
+          <span className="block">We move what matters—on time, every time.</span>
         </h2>
       </div>
 
       {/* CTA Button */}
       <a 
         href="#contact" 
-        className="bg-[#eb0028] text-white px-6 py-3 rounded-full font-bold text-sm md:text-base shadow-lg hover:bg-[#cc0023] transition-all duration-300 mb-8 md:mb-12 transform hover:scale-105"
+        className="bg-[#eb0028] text-white px-5 py-2.5 md:px-6 md:py-3 rounded-full font-bold text-sm md:text-base shadow-lg hover:bg-[#cc0023] transition-all duration-300 mb-4 md:mb-8 transform hover:scale-105 whitespace-nowrap"
       >
         Let's Move Forward Together
       </a>
 
       {/* Client Badge */}
-      <div className="bg-[#eb0028]/5 p-3 md:p-4 rounded-xl border border-[#eb0028]/20 w-full max-w-sm">
+      <div className="bg-[#eb0028]/5 p-2.5 md:p-4 rounded-xl border border-[#eb0028]/20 w-full max-w-[280px] md:max-w-sm">
         <div className="flex items-center justify-center space-x-2">
-          <svg className="w-4 h-4 md:w-5 md:h-5 text-[#eb0028]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-4 h-4 md:w-5 md:h-5 text-[#eb0028] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
           </svg>
-          <span className="text-[#eb0028] font-bold text-sm md:text-lg">Prepared for Expeditors International</span>
+          <span className="text-[#eb0028] font-bold text-sm md:text-lg whitespace-nowrap">Prepared for Expeditors International</span>
         </div>
       </div>
     </div>
