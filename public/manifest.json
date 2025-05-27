@@ -1,6 +1,6 @@
 {
   "short_name": "USKO Pitch",
-  "name": "USKO-Geodis Pitch Deck",
+  "name": "USKO-Expeditors International Pitch Deck",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#851619",
+  "theme_color": "#eb0028",
   "background_color": "#ffffff"
 } 

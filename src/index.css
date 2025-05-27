@@ -39,13 +39,13 @@ body {
 }
 
 .slick-dots li button:before {
-  color: #007aff;
+  color: #eb0028;
   opacity: 0.25;
   font-size: 14px;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #007aff;
+  color: #eb0028;
   opacity: 1;
 }
 

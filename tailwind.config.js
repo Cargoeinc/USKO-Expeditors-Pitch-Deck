@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'usko-blue': '#007aff',
-        'usko-blue-light': '#3395ff',
-        'usko-blue-dark': '#0062cc',
+        'usko-blue': '#eb0028',
+        'usko-blue-light': '#ff1a3d',
+        'usko-blue-dark': '#cc0023',
       },
     },
   },
